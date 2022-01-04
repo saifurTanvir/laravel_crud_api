@@ -44,7 +44,7 @@ Route::middleware('auth:api')->group( function(){
     
     
     Route::get('/users', function(){
-        $users = new_user::all();
+        $users = new_user::get();
         return response()->json($users);
     });
     

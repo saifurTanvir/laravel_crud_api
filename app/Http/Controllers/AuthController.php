@@ -9,9 +9,9 @@ use App\Models\User;
 class AuthController extends Controller
 {
     public function registration(){
-        // $DATA2 = request()->all();
+        //  $DATA2 = request()->all();
 
-        // return response()->json($DATA2);
+        //  return response()->json($DATA2);
 
         $data = request()->validate([
             'name' => ['required', 'string'],
